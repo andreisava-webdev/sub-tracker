@@ -1,9 +1,9 @@
-import { Title } from '@mantine/core';
+import { Header } from '@/features/landing';
 
 export default function Index() {
   return (
-    <div>
-      <Title>HOME</Title>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
