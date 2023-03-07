@@ -1,9 +1,7 @@
 import { Brand } from '@/components/Brand';
 import { MainContainer } from '@/components/MainContainer';
-import { Anchor } from '@mantine/core';
 import { Box } from '@mantine/core';
 import { Group } from '@mantine/core';
-import { Link } from '@remix-run/react';
 import { AppUserMenu } from './AppUserMenu';
 
 export const AppHeader = () => {
