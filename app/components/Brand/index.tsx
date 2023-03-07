@@ -1,7 +1,7 @@
 import { Text } from '@mantine/core';
 import { Link } from '@remix-run/react';
 
-export const AuthBrand = () => {
+export const Brand = () => {
   return (
     <Link to="/" style={{ textDecoration: 'none' }}>
       <Text span fw={700} size={28} color="orange">

@@ -1,4 +1,4 @@
-import { AuthBrand } from '@/features/auth';
+import { Brand } from '@/components/Brand';
 import { AuthForm } from '@/features/auth/components/AuthForm';
 import { Container } from '@mantine/core';
 import { useSearchParams } from '@remix-run/react';
@@ -16,7 +16,7 @@ export default function AuthRoute() {
 
   return (
     <Container size="xs" ta="center" pt={100}>
-      <AuthBrand />
+      <Brand />
 
       <AuthForm mode={mode as 'login' | 'register'} />
     </Container>

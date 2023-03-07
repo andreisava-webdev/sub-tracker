@@ -1,1 +1,1 @@
-export * from './components/AuthBrand';
+export * from './components/AuthForm';
