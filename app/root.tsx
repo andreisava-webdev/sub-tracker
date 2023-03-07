@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -8,18 +8,27 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import { MantineProvider, createEmotionCache } from '@mantine/core';
+import RubikFont from '@fontsource/rubik/index.css';
+import { theme } from './theme';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: 'Sub Tracker',
   viewport: 'width=device-width,initial-scale=1',
 });
+
+export const link: LinksFunction = () => [
+  {
+    rel: 'stylesheet',
+    href: RubikFont,
+  },
+];
 
 createEmotionCache({ key: 'mantine' });
 
 export default function App() {
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
+    <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS>
       <html lang="en">
         <head>
           <Meta />
