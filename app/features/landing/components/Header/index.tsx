@@ -6,7 +6,7 @@ import { HeaderNav } from './HeaderNav';
 export const Header = () => {
   return (
     <LandingContainer role="header">
-      <Group position="apart" py={10}>
+      <Group position="apart" py={20}>
         <HeaderBrand />
 
         <HeaderNav />

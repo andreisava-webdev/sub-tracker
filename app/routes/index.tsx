@@ -1,9 +1,11 @@
-import { Header } from '@/features/landing';
+import { Header, Hero } from '@/features/landing';
 
 export default function Index() {
   return (
     <>
       <Header />
+
+      <Hero />
     </>
   );
 }
